@@ -7,6 +7,7 @@ A collection of small, practical command-line tools written in C. Each tool take
 | Tool | Description | Usage |
 |------|-------------|-------|
 | [Celsior](Celsior/README.md) | Converts temperatures between Celsius, Fahrenheit, and Kelvin | `temp <value> <from> <to>` |
+| [Bodymetric](Bodymetric/README.md) | Calculates body mass index (BMI) and its category | `bmi <weight_kg> <height_cm>` |
 
 More tools will be added over time.
 
@@ -23,6 +24,11 @@ Thimble/
 │   ├── README.md
 │   └── bin/
 │       └── temp
+├── Bodymetric/
+│   ├── Bodymetric.c
+│   ├── README.md
+│   └── bin/
+│       └── bmi
 └── ...
 ```
 
