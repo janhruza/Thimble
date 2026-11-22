@@ -1,0 +1,22 @@
+# Build output
+bin/
+build/
+
+# Compiled objects and libraries
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+
+# Executables and debug output
+*.exe
+*.out
+*.d
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
