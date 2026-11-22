@@ -8,6 +8,7 @@ A collection of small, practical command-line tools written in C. Each tool take
 |------|-------------|-------|
 | [Celsior](Celsior/README.md) | Converts temperatures between Celsius, Fahrenheit, and Kelvin | `temp <value> <from> <to>` |
 | [Bodymetric](Bodymetric/README.md) | Calculates body mass index (BMI) and its category | `bmi <weight_kg> <height_cm>` |
+| [Flipside](Flipside/README.md) | Flips a coin and prints heads or tails | `coin` |
 
 More tools will be added over time.
 
@@ -29,6 +30,11 @@ Thimble/
 │   ├── README.md
 │   └── bin/
 │       └── bmi
+├── Flipside/
+│   ├── Flipside.c
+│   ├── README.md
+│   └── bin/
+│       └── coin
 └── ...
 ```
 
