@@ -50,4 +50,4 @@ gcc -Wall -Wextra -o bin/coin Flipside.c
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for details.
+This project is licensed under the MIT License.
