@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "morse_code.h"
+
 void PrintHelp(const char* prog)
 {
     printf("Morsel - Morse code reader.\nUsage:\n  %s <text>\n" \
@@ -34,7 +36,8 @@ int main(int argc, char **argv)
         else
         {
             // encode the text (arg1) to morse
-            return EXIT_SUCCESS;
+            int result = morse_encrypt(argv[1]);
+            return result > 0 ? EXIT_SUCCESS : EXIT_FAILURE;
         }
     }
 
@@ -43,13 +46,15 @@ int main(int argc, char **argv)
         if (strcmp(argv[1], "-d") == 0)
         {
             // decode morse code
-            return EXIT_SUCCESS;
+            int result = morse_decrypt(argv[2]);
+            return result > 0 ? EXIT_SUCCESS : EXIT_FAILURE;
         }
 
         else if (strcmp(argv[1], "-e") == 0)
         {
             // encode plain text
-            return EXIT_SUCCESS;
+            int result = morse_encrypt(argv[2]);
+            return result > 0 ? EXIT_SUCCESS : EXIT_FAILURE;
         }
 
         else
