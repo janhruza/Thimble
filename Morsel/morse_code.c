@@ -24,6 +24,11 @@ const char *to_morse(char c)
 
 char from_morse(const char *code)
 {
+    if (strcmp(code, "/") == 0)
+    {
+        return 32;
+    }
+
     for (int i = 0; i < 36; i++) {
         if (strcmp(morse[i], code) == 0)
             return symbols[i];

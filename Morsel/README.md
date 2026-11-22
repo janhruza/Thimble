@@ -4,22 +4,14 @@ A small command-line Morse code translator written in C. It encodes text to Mors
 
 ## Structure
 
-```
-Morsel/
-├── Morsel.c
-├── README.md
-├── LICENSE.md
-└── bin/
-    └── morse
-```
-
 The source file is `Morsel.c`, and the compiled executable is `bin/morse`.
 
 ## Usage
 
 ```sh
-morse <text>
+morse <text> # equivalent to morse -e <text>
 morse -d <morse>
+morse -e <text>
 morse -h
 morse --help
 ```
@@ -58,4 +50,4 @@ gcc -Wall -Wextra -o bin/morse Morsel.c
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for details.
+This project is licensed under the MIT License.
