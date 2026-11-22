@@ -9,34 +9,13 @@ A collection of small, practical command-line tools written in C. Each tool take
 | [Celsior](Celsior/README.md) | Converts temperatures between Celsius, Fahrenheit, and Kelvin | `temp <value> <from> <to>` |
 | [Bodymetric](Bodymetric/README.md) | Calculates body mass index (BMI) and its category | `bmi <weight_kg> <height_cm>` |
 | [Flipside](Flipside/README.md) | Flips a coin and prints heads or tails | `coin` |
+| [Morsel](Morsel/README.md) | Encodes text to Morse code and decodes it back | `morse <text>` / `morse -d <morse>` |
 
 More tools will be added over time.
 
 ## Structure
 
 Each tool lives in its own PascalCase folder with a single source file. Compiled binaries go in a `bin/` folder inside that tool's folder.
-
-```
-Thimble/
-├── README.md
-├── LICENSE.md
-├── Celsior/
-│   ├── Celsior.c
-│   ├── README.md
-│   └── bin/
-│       └── temp
-├── Bodymetric/
-│   ├── Bodymetric.c
-│   ├── README.md
-│   └── bin/
-│       └── bmi
-├── Flipside/
-│   ├── Flipside.c
-│   ├── README.md
-│   └── bin/
-│       └── coin
-└── ...
-```
 
 ## Building
 
