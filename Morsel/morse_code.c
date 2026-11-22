@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 
 #include "morse_code.h"
 
@@ -18,6 +19,13 @@ static const char *morse[] = {
 // Helper method
 const char *to_morse(char c)
 {
+    c = toupper(c);
+
+    if (c == 32)
+    {
+        return "/";
+    }
+
     const char *p = strchr(symbols, c);
     return p ? morse[p - symbols] : NULL;
 }
@@ -26,6 +34,7 @@ char from_morse(const char *code)
 {
     if (strcmp(code, "/") == 0)
     {
+        // '/' represents a space
         return 32;
     }
 
