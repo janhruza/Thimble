@@ -6,10 +6,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "inc/macros.h"
-
-CREATE_PROG(dist, int a, int b);
-
 void PrintHelp(const char *prog)
 {
     fprintf(stderr, "%s: No arguments passed.\nUse %s -h or --help for help.\n", prog, prog);
