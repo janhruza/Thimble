@@ -3,4 +3,7 @@
 
 // various macro definitions
 
-#endif MACROS_H
+#define ANSI_RESET      "\033[0m"
+#define ANSI_REVERSE    "\033[7m"
+
+#endif
