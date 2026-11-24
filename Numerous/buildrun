@@ -1,1 +1,1 @@
-gcc -Wall -Wextra -lm -o bin/calc *.c && ./bin/calc
+gcc -Wall -Wextra -lm -o bin/calc *.c inc/*.c && ./bin/calc
